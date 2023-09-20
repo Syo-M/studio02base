@@ -1,4 +1,5 @@
-const music = new Audio('../bgm/School_Bell.mp3');
+{
+const music = new Audio('../bgm/school_Bell.mp3');
 const hotaru = new Audio('../bgm/hotaru_piano_10.mp3');
 const c_btn = document.getElementById('chime_button');
 const elem = document.getElementById("clock");
@@ -10,6 +11,7 @@ function myfunc() {
     let hours = date.getHours();
     let minutes = date.getMinutes();
     let seconds = date.getSeconds();
+
     if (hours < 10) {
         hours = "0" + hours;
     }
@@ -202,5 +204,5 @@ c_btn.addEventListener('click', function () {
     if ((h * 60) + m > (goodbye_h * 60) + goodbye_m) {
         clearTimeout(goodbye);
     }
-
 });
+}

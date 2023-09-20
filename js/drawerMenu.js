@@ -2,8 +2,8 @@
 /* create by syo motoyama,2022*/
 
 document.addEventListener('DOMContentLoaded', function () {
-    var toggleButton = document.querySelector('.toggleButton');
-    var drawerMenu = document.getElementById('drawerMenu');
+    const toggleButton = document.querySelector('.toggleButton');
+    const drawerMenu = document.getElementById('drawerMenu');
 
     // トグルボタンをクリックした際の処理
     toggleButton.addEventListener('click', function (event) {
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // ドキュメント内のアンカーリンクを取得します
-    var anchorLinks = document.querySelectorAll('a');
+    const anchorLinks = document.querySelectorAll('a');
     for (var i = 0; i < anchorLinks.length; i++) {
         // アンカーリンクがクリックされた際の処理
         anchorLinks[i].addEventListener('click', function () {
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // ドキュメント内をクリックした際の処理
     document.addEventListener('click', function (event) {
-        var targetElement = event.target;
+        const targetElement = event.target;
 
         // ドロワーメニューが開いている場合に限り、ドロワーメニュー外をクリックで閉じます
         if (drawerMenu.classList.contains('open') && !drawerMenu.contains(targetElement) && targetElement !== toggleButton) {
