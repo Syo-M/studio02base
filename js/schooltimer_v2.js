@@ -39,8 +39,8 @@ c_btn.addEventListener('click', function () {
     // クリアしたのでアラームリストを初期化
     alarms = [];
 
-    const chime = new Audio('../bgm/school_Bell.mp3');
-    const closed = new Audio('../bgm/hotaru_piano_10.mp3');
+    const chime = new Audio('https://github.com/Syo-M/studio02base/raw/main/bgm/school_Bell.mp3');
+    const closed = new Audio('https://github.com/Syo-M/studio02base/raw/main/bgm/hotaru_piano_10.mp3');
     // 音源元サイト https://mmt38.info/arrange/hotaru/
 
     // アラーム処理
