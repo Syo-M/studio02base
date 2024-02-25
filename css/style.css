@@ -262,7 +262,7 @@ entry;
         }
 
         .mbtiContainer p {
-            max-width: 23rem;
+            max-width: 24rem;
             padding: 2rem;
             border: 1px solid var(--dMain);
             border-radius: var(--borderR);
